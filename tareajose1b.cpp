@@ -1,3 +1,4 @@
+//calculo de la suma armonica desde 1 hasta 10
 #include<iostream>
 using namespace std;
 
