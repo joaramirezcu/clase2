@@ -1,21 +1,20 @@
+
 #include <iostream>
 using namespace std;
 
-  int main(void){
-  int numero=7;
-  int divisor=2;
-  bool primo= true;
- 
-  while (divisor<numero){
-    if (numero % divisor ==0){
-      primo=false;
+bool is_prime(int number){
+    for(int i=2; i<number; i++){
+        if (number % i == 0) return false;
+        }
+        return true;
     }
-    divisor++;
-  }
-
-  if(primo==true){
-    cout << numero <<endl;
-  }
- 
-  return 0;
-  }
+    
+int main(void){
+    int min_number = 500;
+    int max_number = 1400;
+    
+    for(int j = min_number; j <= max_number; j++){
+        if (is_prime(j)) {cout << j << endl;}
+        }
+    return 0;
+    }
